@@ -1,8 +1,5 @@
 let oradores = document.getElementById('mostrando');
-// function getRowId(id) {
-//     alert('Clicked row id:', id);
-//     // Add your logic here to use the id as needed
-// }
+
 
 //let salvar = document.getElementById('salvar') ;
 let idEdit = document.getElementById('idEdit');
@@ -65,7 +62,7 @@ function fetchData() {
                 `;
 
         row.querySelector('.edit').addEventListener('click', () => {
-          // Function to handle edit click
+    
           editRow(item.id);
           idEdit.value = item.id
           nombreModal.value = item.nombre
@@ -82,11 +79,7 @@ function fetchData() {
 
         });
 
-        // function handleEditClick(itemId){
-        //   alert("asda")
-        //   idEdit.value = itemId
-
-        // }
+    
 
         function editRow(itemId) {
 
@@ -156,12 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(({ data, status }) => {
         if (status === 204) {
-          // 204 indicates no content, handle it accordingly
+        
           console.log('No content returned from server.');
-          // You might handle this case differently based on your requirements
+
         } else {
           console.log('Data actualizada:', data);
-          // Handle the updated data here
+        
         }
       })
       .catch(error => {
@@ -222,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
      
         } else {
           console.log('Data actualizada:', data);
-          // Handle the updated data here
+      
         }
       })
       .catch(error => {
@@ -237,33 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// function update() {
-
-
-
-
-// fetch(`http://localhost:8080/web-app/api/orador/${id}`, {
-//     method: 'PUT',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(dataToUpdate)
-//   })
-//     .then(response => {
-//       if (!response.ok) {
-//         throw new Error('Network response was not ok');
-//       }
-//       return response.json();
-//     })
-//     .then(data => {
-//       console.log('Data updated:', data);
-
-//     })
-//     .catch(error => {
-//       console.error('There was a problem with the fetch operation:', error);
-
-//     });
-//   }
 
 
 
