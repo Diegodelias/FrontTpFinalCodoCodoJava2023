@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl bg-dark navbar-dark ">
+    <div class="container-fluid container-fluid-auxiliar ">
+      <a href="#" class="navbar-brand">
+        <div class="d-flex align-items-center  ">
+          <img class="w-25 " src="./assets/imagenes/codoacodo.png" alt="">
+          <p>Conf Bs As</p>
+        </div>
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">La conferencia</a>
+          </li>
+          <li class="nav-item dropdown" id="dropdownOradores">
+            <a href="#oradores" class="nav-link">Los oradores</a>
+            <div class="dropdown-content ">
+              <a href="crudUi.html">Crud oradores</a>
+           
+            </div>
+      
+          </li>
+          <li class="nav-item">
+            <a href="#lugar-fecha" class="nav-link">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a href="#conviertete" class="nav-link">Conviértete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a href="#comprarTickets" class="nav-link text-success">Comprar tickets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid  contenedor-carrousel ">
+    <div class="carousel slide carousel-fade" id="slider">
+      <div class="carousel-indicators">
+        <button class="active" data-bs-slide-to="0" data-bs-target="#slider">
+
+        </button>
+        <button data-bs-slide-to="1" data-bs-target="#slider">
+
+        </button>
+
+        <button data-bs-slide-to="2" data-bs-target="#slider">
+
+        </button>
+      </div>
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active drk  w-100 position-relative " id="item1">
+          <img src="./assets/imagenes/ba1.jpg" alt="" class="img-fluid d-block w-100  foto-carousel ">
+
+
+          <div
+            class=" col-sm-11 offset-sm-1  col-md-8 offset-md-2  col-xl-4 offset-xl-7  text-light text-sm-center  text-md-end pe-5  position-absolute top-50 start-0 translate-middle-y carousel-content ">
+            <h2 class="display-6">Conf Bs As</h2>
+            <p class=" lh-base ">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+              comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
+              conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que
+              tenemos para ti. Te esperamos!</p>
+            <div class=" d-flex justify-content-end d-md-flex  mt-3" id="botones-slider-izquierda">
+
+              <button type="button" class="btn btn-outline-light ">Quiero ser orador</button>
+              <button type="button" class="btn btn-success   ms-3">Comprar tickets</button>
+
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+        <!-- segunda imagen -->
+        <div class="carousel-item  drk w-100 position-relative  " id="item2">
+          <!-- <img src="./assets/imagenes/ba1.jpg" alt="" class="img-fluid d-block w-100 foto-carousel" > -->
+          <img src="./assets/imagenes/ba2.jpg" alt="" class="img-fluid d-block w-100 foto-carousel">
+
+
+          <div
+            class="col-sm-11 offset-sm-1  col-md-8 offset-md-2  col-xl-4 offset-xl-7  text-light text-sm-center  text-md-end pe-5  position-absolute top-50 start-0 translate-middle-y carousel-content ">
+            <p class="h1">Conf Bs As</pc>
+            <p class=" lh-base">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+              comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
+              conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que
+              tenemos para ti. Te esperamos!</p>
+            <div class="d-flex justify-content-end mt-5">
+
+              <button type="button" class="btn btn-outline-light ">Quiero ser orador</button>
+              <button type="button" class="btn btn-success  ms-3">Comprar tickets</button>
+
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+        <!-- tercera imagen -->
+
+        <div class="carousel-item  drk w-100 position-relative  " id="item3">
+          <!-- <img src="./assets/imagenes/ba1.jpg" alt="" class="img-fluid d-block w-100 foto-carousel" > -->
+          <img src="./assets/imagenes/ba3.jpg" alt="" class="img-fluid d-block w-100 foto-carousel">
+
+
+          <div
+            class=" col-sm-11 offset-sm-1  col-md-8 offset-md-2  col-xl-4 offset-xl-7  text-light text-sm-center  text-md-end pe-5  position-absolute top-50 start-0 translate-middle-y carousel-content ">
+            <p class="h1">Conf Bs As</pc>
+            <p class=" lh-base">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad
+              el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
+              miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para
+              ti. Te esperamos!</p>
+
+
+            <div class=" d-flex justify-content-end mt-5 contenedor-botones-slider">
+
+              <button type="button" class="btn btn-outline-light ">Quiero ser orador</button>
+              <button type="button" class="btn btn-success  ms-3">Comprar tickets</button>
+
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+      <!-- 
+      fin carousel inner -->
+
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+
+      </button>
+
+      <button class="carousel-control-next" data-bs-slide="prev" data-bs-target="#slider">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+
+      </button>
+
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+  <div class="container" id="oradores">
+    <div class="d-flex flex-column align-items-center ">
+      <p class="fs-6 mt-3">CONOCE A LOS</p>
+      <h3>ORADORES</h3>
+    </div>
+    <div class="row d-flex justify-content-between  ">
+      <div class=" card-ancho col-sm-12 col-md-6 col-lg-4 card p-0  ">
+        <img src="./assets/imagenes/steve.jpg" alt="..." class="card-image-top">
+        <div class="card-body">
+          <div>
+            <span class="badge bg-warning text-dark">Javascript</span>
+            <span class="badge bg-info ">React</span>
+          </div>
+          <h5 class="card-title">Steve Jobs</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea dignissimos ipsam
+            quae sapiente quasi voluptate odio placeat impedi</p>
+
+        </div>
+      </div>
+      <div class="card-ancho col-sm-12  col-md-6 col-lg-4 card p-0 ">
+        <img src="./assets/imagenes/bill.jpg" alt="...">
+        <div class="card-body">
+          <div>
+            <span class="badge bg-warning text-dark">Javascript</span>
+            <span class="badge bg-info ">React</span>
+          </div>
+          <h5 class="card-title">Bill Gates</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea dignissimos ipsam
+            quae sapiente quasi voluptate odio placeat impedi</p>
+
+        </div>
+      </div>
+      <div class=" card-ancho col-sm-12 col-md-6 col-lg-4 card p-0 ">
+        <img src="./assets/imagenes/ada.jpeg" alt="...">
+        <div class="card-body">
+          <div>
+            <span class="badge bg-secondary">Negocios</span>
+            <span class="badge bg-danger ">Startups</span>
+          </div>
+          <h5 class="card-title">Ada LoveLace</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea dignissimos ipsam
+            quae sapiente quasi voluptate odio placeat impedi</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="container-fluid mt-5 contenedor-doble" id="lugar-fecha">
+    <div class="row g-1 ">
+      <div class="col-sm-12 col-md-6">
+        <img src="./assets/imagenes/honolulu.jpg" alt="" class=" w-100 " style="min-height: 25rem">
+
+      </div>
+      <div class="col-sm-12 col-md-6 bg-dark text-light " style="min-height: 25rem">
+        <h3 class="mt-3 ps-4">BS AS - Octubre</h3>
+        <p class="ps-4 pe-4">Buenos Aires es la provincia y la localidad más grande y la localidad más grande del estado
+          de Argentina en los Estados Unidos. Honululi e la más sureña de entre las principales ciudades
+          estadounidenses.Aunqye el nombre de Honolulu se refiere al área urbana en la cosat sureset de la isla de Oahu,
+          la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cybre todo la ciudad
+          (aproximadamente 600k de superficie).</p>
+        <button type="button" class="ms-4 btn btn-outline-light">Conoce más</button>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="conviertete">
+    <div class="d-flex flex-column align-items-center ">
+      <p class="fs-6 mt-3">CONVIÉRTE EN UN </p>
+      <h3>ORADOR</h3>
+      <p class="fs-6 mt-3">Anótate como orador para dar un charl ignite. Cuéntanos de que quiere hablar! </p>
+    </div>
+    <form>
+      <div class="row d-flex justify-content-center ps-0">
+        <div class="col-sm-6 col-md-4 mb-3  ">
+
+          <input type="text" class="form-control" placeholder="Nombre" id="nombre" aria-describedby="nombre">
+
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 pe-3">
+
+          <input type="apellido" class="form-control" placeholder="Apellido" id="apellido" aria-describedby="apellido">
+
+        </div>
+
+
+        <div class=" col-sm-12 col-md-8 mb-3 form-floating">
+          <textarea  class="form-control" placeholder="Sobre qué quiere hablar?" id="floatingTextarea2"
+            style="height: 10rem"></textarea>
+          <label for="floatingTextarea2" class="text-secondary ps-4">Sobre qué quieres hablar?</label>
+          <div id="passwordHelpBlock" class="mt-2 col-sm-8form-text text-secondary">
+            Recuerda Incluir título para tu charla.
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <button type="button" id="enviar" class="btn btn-success w-100">Enviar</button>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+  <div class="container mt-5" id="comprarTickets">
+    <div class="row d-flex justify-content-center  contenedorTickets gap-3">
+      <div
+        class="col-sm-12  col-lg-3 border border-3 border-primary precios-categorias  pt-4 pb-4 d-flex flex-column align-items-center "  data-attribute="estudiante">
+        <p class="fw-bolder fs-4">Estudiante</p>
+        <p class="fs-5">Tienen un descuento</p>
+        <p class="fw-bolder">80%</p>
+        <p>* presentar documentación</p>
+      </div>
+
+      <div
+        class=" col-sm-12  col-lg-3 border border-3 border-success  precios-categorias p-3  d-flex flex-column align-items-center justify-content-center"  data-attribute="trainee">
+        <p class="fw-bolder fs-4">Trainee</p>
+        <p class="fs-5">Tienen un descuento</p>
+        <p class="fw-bolder">50%</p>
+        <p>* presentar documentación</p>
+
+      </div>
+
+      <div
+        class="col-sm-12  col-lg-3 border border-3 border-warning precios-categorias p-3  d-flex flex-column align-items-center justify-content-center"  data-attribute="junior">
+        <p class="fw-bolder fs-4">Junior</p>
+        <p class="fs-5">Tienen un descuento</p>
+        <p class="fw-bolder">15%</p>
+        <p>* presentar documentación</p>
+
+      </div>
+
+    </div>
+
+    <div class="d-flex flex-column align-items-center ">
+      <p class="fs-5 mt-3">VENTA </p>
+      <h1>VALOR DE TICKET $200</h1>
+
+    </div>
+
+    <form class="form-ticket validado" novalidate>
+      <div class="row d-flex justify-content-center  mt-3 ">
+        <div class="mb3 form-group col-sm-12  col-lg-7 ">
+          <input type="text" class="form-control form-control-lg " placeholder="Nombre" required>
+          
+          <div class="invalid-feedback">El campo Nombre no puede estar vacio</div>
+
+        </div>
+        <div id="formTicketApellido" class="mb3  form-group col-sm-12  col-lg-5">
+          <input type="text" class="form-control form-control-lg " placeholder="Apellido" required></imput>
+          <div class="invalid-feedback">El campo Apellido no puede estar vacio</div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center  mt-3 ">
+
+        <div class="mb3 form-group col-sm-12  ">
+          <input type="email" class="form-control form-control-lg " placeholder="Correo" required></imput>
+          <div class="invalid-feedback">El campo email debe ser un email válido</div>
+        </div>
+
+
+      </div>
+
+      <div class="row d-flex justify-content-center  mt-3 ">
+        <div class="mb3 form-group col-sm-12  col-lg-6 ">
+          <label>Cantidad</label>
+          <input type="number" class="form-control form-control-lg mt-2" id="cantidad" placeholder="cantidad" required>
+          <div class="invalid-feedback">El campo cantidad debe ser un numero</div>
+
+        </div>
+        <div class="mb5  form-group col-sm-12  col-lg-6">
+          <label>Categoria</label>
+          <select id="selectCategoria" name="Categoria" class="form-select form-select-lg mt-2 ">
+            <option value="estudiante">Estudiante</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+          </select>
+          <!-- <label>Categoria</label>
+      <input type="text" class="form-control mt-2" placeholder="Categoria" ></imput> -->
+        </div>
+      </div>  
+
+      <div class="row d-flex  justify-content-center  mt-5 ">
+        <div class="mb3 form-group col-sm-12 ">
+          <input id="totalPagar" type="text" class="form-control form-control-lg p-3 " placeholder="Total Pagar:$"  >
+
+        </div>
+        
+      </div>
+
+
+
+
+      <div id="botones_final" class="row d-flex justify-center  mt-4 ">
+        <div class="mb3 form-group col-sm-12  col-lg-6 ">
+          <button type="button" id="botonBorrar"class="btn col-sm-12 p-3 botones-ticket text-light mt-3">Borrar</button>
+        </div>
+        <div  class="mb3 form-group col-sm-12  col-lg-6 ">
+          <button id="resumen" type="submit" class="btn  col-sm-12 p-3 botones-ticket text-light mt-3">Resumen</button>
+        </div>
+    
+      </div>  
+
+    </form>
+
+
+    
+
+  </div>
+
+
+
+  <div class="mt-4 container-fluid fondo-footer">
+
+    <div class="container d-flex  text-light justify-content-between ">
+      <p class="mt-4">Preguntas<br> frecuentes</p>
+      <p class="mt-4">Contáctanos</p>
+      <p class="mt-4 d-xs-none d-lg-block">Prensa</p>
+      <p class="mt-4 d-sm-none d-lg-block">Conferencias</p>
+      <p class="mt-4">Términos y <br>condiciones</p>
+      <p class="mt-4 d-sm-none d-lg-block">Privacidad</p>
+      <p class="mt-4">Estudiantes</p>
+
+    </div>
+
+  </div>
+
+  
+  <script src="assets\js\main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
